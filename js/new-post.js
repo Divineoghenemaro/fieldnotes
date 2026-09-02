@@ -111,7 +111,7 @@ function initEntryForm() {
       saved = addPost({ title, category, date, excerpt, body, image });
     }
 
-    location.href = 'post.html?id=' + encodeURIComponent(saved.id);
+    location.href = 'evermorep.html?id=' + encodeURIComponent(saved.id);
   });
 }
 
