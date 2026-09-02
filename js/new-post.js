@@ -83,7 +83,7 @@ function initEntryForm() {
   });
 
   cancelBtn.addEventListener('click', () => {
-    location.href = existing ? 'post.html?id=' + encodeURIComponent(existing.id) : 'index.html';
+    location.href = existing ? 'evermorep.html?id=' + encodeURIComponent(existing.id) : 'index.html';
   });
 
   form.addEventListener('submit', (e) => {
@@ -111,7 +111,7 @@ function initEntryForm() {
       saved = addPost({ title, category, date, excerpt, body, image });
     }
 
-    location.href = 'evermorep.html?id=' + encodeURIComponent(saved.id);
+    location.href = 'post.html?id=' + encodeURIComponent(saved.id);
   });
 }
 
