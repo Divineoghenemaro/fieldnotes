@@ -36,11 +36,7 @@ async function renderPost() {
     </div>
   `;
 
-  document.getElementById('delete-btn').addEventListener('click', () => {
-    if (confirm('Delete “' + post.title + '”? This can\'t be undone.')) {
-      deletePost(post.id);
-      location.href = 'index.html';
-    }
+
   });
   
 }
