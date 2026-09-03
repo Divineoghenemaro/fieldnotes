@@ -15,7 +15,9 @@ async function renderCategoryPage() {
        href="category.html?tag=${encodeURIComponent(cat)}">${escapeHtml(cat)}</a>
   `).join('');
 
-  const posts = activeTag ? getPostsByCategory(activeTag) : getAllPosts();
+  const posts = activeTag
+  ? await getPostsByCategory(activeTag)
+  : await getAllPosts();
 
   if (activeTag) {
     heading.textContent = activeTag;
