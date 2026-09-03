@@ -4,8 +4,9 @@
 if (!window.__fieldnotesStorageLoaded) {
   window.__fieldnotesStorageLoaded = true;
 
+  
   var SUPABASE_URL = 'https://mpvnhwixmjxoxrosfxdq.supabase.co';
-  var SUPABASE_ANON_KEY = 'sb_publishable_4b0NdHMnTv-yWaOMF2pDXg_XLhNA8xH';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1wdm5od2l4bWp4b3hyb3NmeGRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg0MzE3MzksImV4cCI6MjEwNDAwNzczOX0.i7m_U_HY8lp21-GG4au_6aXovmQ4NmeORgFUALfkH6I';
 
   var supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
