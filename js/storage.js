@@ -1,6 +1,6 @@
 /* storage.js — Supabase-backed data layer for Fieldnotes */
 
-const SUPABASE_URL = 'https://mpvnhwixmjxoxrosfxdq.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://mpvnhwixmjxoxrosfxdq.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_4b0NdHMnTv-yWaOMF2pDXg_XLhNA8xH';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
