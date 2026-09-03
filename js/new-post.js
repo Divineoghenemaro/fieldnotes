@@ -87,7 +87,7 @@ async function initEntryForm() {
     location.href = existing ? 'evermorep.html?id=' + encodeURIComponent(existing.id) : 'index.html';
   });
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const title = titleInput.value.trim();
@@ -110,10 +110,10 @@ async function initEntryForm() {
     
     try {
         let saved;
-      if (existing) {
-        saved = updatePost(existing.id, { title, category, date, excerpt, body, image });
+      if (existing) { 
+        saved = await updatePost(existing.id, { title, category, date, excerpt, body, image });
       } else {
-        saved = addPost({ title, category, date, excerpt, body, image });
+        saved = await addPost({ title, category, date, excerpt, body, image });
       }
       location.href = 'post.html?id=' + encodeURIComponent(saved.id);
     } catch (err) {
