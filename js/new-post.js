@@ -111,9 +111,9 @@ async function initEntryForm() {
     try {
         let saved;
       if (existing) {
-        saved = await updatePost(existing.id, { title, category, date, excerpt, body, image });
+        saved = updatePost(existing.id, { title, category, date, excerpt, body, image });
       } else {
-        saved = await addPost({ title, category, date, excerpt, body, image });
+        saved = addPost({ title, category, date, excerpt, body, image });
       }
       location.href = 'post.html?id=' + encodeURIComponent(saved.id);
     } catch (err) {
