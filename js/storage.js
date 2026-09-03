@@ -5,7 +5,6 @@ const SUPABASE_ANON_KEY = 'sb_publishable_4b0NdHMnTv-yWaOMF2pDXg_XLhNA8xH';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-
 async function getCurrentUser() {
   const { data, error } = await supabase.auth.getUser();
   if (error) return null;
