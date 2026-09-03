@@ -1,10 +1,10 @@
 /* post.js — renders a single entry based on ?id= in the URL */
 
-function renderPost() {
+async function renderPost() {
   const params = new URLSearchParams(location.search);
   const id = params.get('id');
   const container = document.getElementById('post-container');
-  const post = id ? getPostById(id) : null;
+  const post = id ? await getPostById(id) : null;
 
   if (!post) {
     container.innerHTML = `
