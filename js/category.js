@@ -3,7 +3,6 @@
 async function renderCategoryPage() {
   const params = new URLSearchParams(location.search);
   const activeTag = params.get('tag');
-  const categories = getCategories();
   const tagLinks = document.getElementById('tag-links');
   const ledger = document.getElementById('ledger');
   const heading = document.getElementById('category-heading');
