@@ -46,7 +46,7 @@ window.addEventListener('unhandledrejection', function(e) {
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="js/storage.js"></script>
+  <script src="js/evermores.js"></script>
   <script>
 
     function getSafeNextPage() {
@@ -64,7 +64,7 @@ window.addEventListener('unhandledrejection', function(e) {
       const error = document.getElementById('login-error');
       const button = document.getElementById('login-btn');
 
-      form.addEventListener('submit', async (event) => {
+      form.addEventListener('submit', async (event)q => {
         event.preventDefault();
         error.style.display = 'none';
         button.disabled = true;
