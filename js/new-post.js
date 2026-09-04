@@ -43,7 +43,7 @@ async function initEntryForm() {
   const cancelBtn = document.getElementById('cancel-btn');
   const saveBtn = document.getElementById('save-btn');
 
-  const categories = await getCategories(); 
+  const categories = await getCategories();
   categoryOptions.innerHTML = categories.map(cat => `<option value="${escapeHtml(cat)}">`).join('');
 
   if (existing) {
@@ -55,14 +55,15 @@ async function initEntryForm() {
     dateInput.value = existing.date;
     excerptInput.value = existing.excerpt;
     bodyInput.value = (Array.isArray(existing.body) ? existing.body : [String(existing.body || '')]).join('\n\n');
-   
+
     if (existing.image) {
       imageDataInput.value = existing.image;
       imagePreview.src = existing.image;
       imagePreview.style.display = 'block';
       removeImageBtn.style.display = 'inline';
       imageInput.required = false;
-    } else {
+    }
+  } else {
     dateInput.value = new Date().toISOString().slice(0, 10);
   }
 
@@ -82,6 +83,7 @@ async function initEntryForm() {
     imagePreview.style.display = 'none';
     removeImageBtn.style.display = 'none';
     imageInput.value = '';
+    imageInput.required = true;
   });
 
   cancelBtn.addEventListener('click', () => {
@@ -106,11 +108,11 @@ async function initEntryForm() {
     const body = bodyRaw.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean);
     const image = imageDataInput.value || null;
 
-    saveBtn.disabled = true; 
+    saveBtn.disabled = true;
     saveBtn.textContent = 'Saving...';
-    
+
     try {
-        let saved;
+      let saved;
       if (existing) {
         saved = await updatePost(existing.id, { title, category, date, excerpt, body, image });
       } else {
