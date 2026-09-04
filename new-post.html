@@ -109,9 +109,9 @@
         </div>
 
         <div class="field">
-          <label for="image">Cover image (optional)</label>
-          <input type="file" id="image" name="image" accept="image/*" />
-          <input type="hidden" id="image-data" />
+          <label for="image">Cover image</label>
+          <input type="file" id="image" name="image" accept="image/*" required />
+          <input type="hidden" id="image-data" required />
           <img id="image-preview" alt="" style="display: none" />
           <p class="field-hint">
             JPEG or PNG. It's resized automatically to keep things small.
