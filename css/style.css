@@ -580,6 +580,7 @@ sidebar {
 .page-shell {
   max-width: 90%; 
   margin: auto; 
+}
 
 .tag-links {
   display: flex;
