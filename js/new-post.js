@@ -55,13 +55,14 @@ async function initEntryForm() {
     dateInput.value = existing.date;
     excerptInput.value = existing.excerpt;
     bodyInput.value = (Array.isArray(existing.body) ? existing.body : [String(existing.body || '')]).join('\n\n');
+   
     if (existing.image) {
       imageDataInput.value = existing.image;
       imagePreview.src = existing.image;
       imagePreview.style.display = 'block';
       removeImageBtn.style.display = 'inline';
-    }
-  } else {
+      imageInput.required = false;
+    } else {
     dateInput.value = new Date().toISOString().slice(0, 10);
   }
 
