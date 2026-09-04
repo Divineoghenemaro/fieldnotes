@@ -138,11 +138,13 @@
     margin: 0;
     margin: 0; 
   }
+  .post-image {
+    max-height: 1000px;
+  }
   .post-image, .post-body {
     margin: 0 auto;
     min-width: 98%;
     max-width: 98%; 
-    max-height: auto; 
     padding: 5px 0; 
     display: block !important;
     float: none; 
