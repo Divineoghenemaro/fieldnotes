@@ -26,7 +26,7 @@ async function renderAdminPost() {
 
   container.innerHTML = `
     <div class="post-actions">
-      <a href="evermorenp.html?id=${encodeURIComponent(post.id)}">Edit entry</a>
+      <a href="new-post.html?id=${encodeURIComponent(post.id)}">Edit entry</a>
       <button type="button" id="delete-btn" class="danger">Delete entry</button>
       <a href="evermorec.html">All entries</a>
     </div>
