@@ -796,7 +796,6 @@ sidebar {
   color: var(--foot-strong)
 }
 
-
 .foot-center {
   border-top: 1px solid var(--muted);
   align-content: center; 
@@ -808,4 +807,4 @@ sidebar {
   max-width: 90%;
   padding-top: 10px;
   margin: 0 auto;
-}
+} 
