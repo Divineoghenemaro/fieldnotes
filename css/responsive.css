@@ -146,7 +146,7 @@
     padding: 5px 0; 
     display: block !important;
     float: none; 
-    overflow: visible; 
+    overflow: flex; 
   }
   .page-contt {
     width: 93%;
