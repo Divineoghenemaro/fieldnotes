@@ -579,7 +579,12 @@ sidebar {
 
 .page-shell {
   max-width: 90%; 
-  margin: auto; 
+  margin: 0 auto; 
+}
+
+.page-contt {
+  max-width: 98%; 
+  margin: 0 auto;
 }
 
 .tag-links {
