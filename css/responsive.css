@@ -149,8 +149,10 @@
     overflow: visible;
   }
   .page-contt {
-    width: 902%;
+    width: 90%;
     margin: 0 auto;
+    overflow: hidden; 
+    background: red;
   }
   
 /* ---------- Entry ---------- */
