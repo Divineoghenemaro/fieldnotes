@@ -144,7 +144,7 @@
     max-width: 98%; 
     height: auto;
     padding: 5px 0; 
-    display: inline-block !important;
+    display: block !important;
     float: none; 
     overflow: visible;
   }
