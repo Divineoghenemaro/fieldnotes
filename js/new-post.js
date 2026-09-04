@@ -117,7 +117,7 @@ async function initEntryForm() {
       }
       location.href = 'post.html?id=' + encodeURIComponent(saved.id);
     } catch (err) {
-      errorMsg.textContent = 'Something went wrong saving this entry. Please try again.';
+      errorMsg.textContent = 'DEBUG: ' + (err.message || JSON.stringify(err));
       errorMsg.classList.add('is-visible');
       saveBtn.disabled = false;
       saveBtn.textContent = existing ? 'Save changes' : 'Save entry';
