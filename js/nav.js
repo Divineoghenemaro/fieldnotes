@@ -3,8 +3,9 @@
 function initNav() {
   const path = location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link').forEach(link => {
-    const href = link.getAttribute('href').split('?')[0];
-    if (href === path) link.classList.add('is-current');
+    const href = link.getAttribute('href');
+    if (!href) return;
+    if (href.split('?')[0] === path) link.classList.add('is-current');
   });
 
   const toggle = document.getElementById('search-toggle');
