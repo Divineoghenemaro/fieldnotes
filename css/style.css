@@ -225,10 +225,12 @@ h1, h2, h3 {
   display: inline-block;
 }
 .ayop {
-  display: block !important;
-  visibility: visible !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important; 
+  display: block;
+  text-align: left;
+  margin: 20px auto; 
+  padding: 10px 20px;
+  background: var(--nav);
+  color: var(--ver);
 }
 .slider {
     width: 90%;
