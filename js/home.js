@@ -5,7 +5,7 @@ async function renderLedger() {
   const ledger = document.getElementById('ledger');
 
   if (posts.length === 0) {
-    ledger.innerHTML = '<li class="ledger-empty">No entries yet. <a href="evermorenp.html" style="color: var(--pine); border-bottom: 1px solid var(--pine);">Write the first one.</a></li>';
+    ledger.innerHTML = '<li class="ledger-empty">No entries yet. <a href="new-post.html" style="color: var(--pine); border-bottom: 1px solid var(--pine);">Write the first one.</a></li>';
     return;
   }
 
