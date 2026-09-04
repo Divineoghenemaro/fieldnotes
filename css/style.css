@@ -226,9 +226,9 @@ h1, h2, h3 {
 }
 .ayop-pl {
   margin: 20px 0;
+  display: block;
 }
 .ayop {
-  display: inline;
   text-align: left;
   margin: 10px auto; 
   padding: 5px 10px;
