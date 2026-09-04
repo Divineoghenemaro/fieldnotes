@@ -11,7 +11,7 @@
 
 <nav class="site-nav">
       <div class="nav-inner">
-        <a href="index.html" class="brand"> Add New Post </a>
+        <a href="" class="brand"> Add New Post </a>
 
         <input type="checkbox" id="menu" />
         <label for="menu" class="menu-btn nav-menu"> &#9776 </label>
@@ -19,7 +19,9 @@
         <ul class="nav-links">
           <li><a href="index.html" class="nav-link">Public</a></li>
           <li><a href="evermorec.html" class="nav-link">All Blog Posts (Admin Side)</a></li>
-          <li class="nav-search">
+            <li><span data-auth-email class="nav-link" aria-label="Signed in account"></span></li>
+            
+            <li class="nav-search">
             <button
               class="search-toggle"
               id="search-toggle"
@@ -37,9 +39,8 @@
               />
               <div class="search-results" id="search-results"></div>
             </div>
-          </li>
-        <li><span data-auth-email class="nav-link" aria-label="Signed in account"></span></li>
-          <li><button type="button" data-logout class="nav-link" style="background:none;border:0;cursor:pointer;font:inherit;padding:0;">Sign out</button></li>
+            </li>
+            <li><button type="button" data-logout class="nav-link" style="background:none;border:0;cursor:pointer;font:inherit;padding:0;">Sign out</button></li>
         </ul>
       </div>
     </nav>
