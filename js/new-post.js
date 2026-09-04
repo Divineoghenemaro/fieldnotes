@@ -54,7 +54,7 @@ async function initEntryForm() {
     categoryInput.value = existing.category;
     dateInput.value = existing.date;
     excerptInput.value = existing.excerpt;
-    bodyInput.value = existing.body.join('\n\n');
+    bodyInput.value = (Array.isArray(existing.body) ? existing.body : [String(existing.body || '')]).join('\n\n');
     if (existing.image) {
       imageDataInput.value = existing.image;
       imagePreview.src = existing.image;
