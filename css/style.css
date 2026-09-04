@@ -577,6 +577,10 @@ sidebar {
   margin-bottom: 16px;
 }
 
+.page-shell {
+  max-width: 90%; 
+  margin: auto; 
+
 .tag-links {
   display: flex;
   flex-wrap: wrap;
