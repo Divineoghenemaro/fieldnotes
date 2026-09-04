@@ -30,7 +30,7 @@ if (!window.__fieldnotesStorageLoaded) {
     const { data, error } = await supabase
       .from('posts')
       .select('*')
-      .order('date', { ascending: false });
+      .order('created_at', { ascending: false });
     if (error) { console.error('getAllPosts:', error); return []; }
     return data;
   };
