@@ -148,6 +148,10 @@
     float: none; 
     overflow: visible;
   }
+  .page-contt {
+    width: 902%;
+    margin: 0 auto;
+  }
   
 /* ---------- Entry ---------- */
 
