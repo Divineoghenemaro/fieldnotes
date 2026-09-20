@@ -155,7 +155,7 @@
     margin: 0 auto;
     overflow: hidden; 
   }
-  .sidebar {
+  .sidebar, .post-body {
     height: auto;
   }
   
