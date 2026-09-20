@@ -155,6 +155,9 @@
     margin: 0 auto;
     overflow: hidden; 
   }
+  .sidebar {
+    height: auto;
+  }
   
 /* ---------- Entry ---------- */
 
