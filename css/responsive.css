@@ -157,7 +157,7 @@
     margin: 0 auto;
     overflow: hidden; 
   }
-  .sidebar, .post-body {
+  .sidebar {
     height: auto; 
     max-height: fit-content;
   }
