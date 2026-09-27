@@ -146,6 +146,8 @@
     min-width: 98%;
     max-width: 98%; 
     padding: 5px 0;
+    height: auto; 
+    max-height: fit-content;
     display: block !important;
     float: none; 
     overflow: flex; 
