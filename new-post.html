@@ -82,15 +82,16 @@
           <label for="date">Date</label>
           <input type="date" id="date" name="date" required />
         </div>
-
+  
         <div class="field">
-          <label for="excerpt">One-line excerpt</label>
+          <label for="excerpt">Summary</label>
           <input
             type="text"
             id="excerpt"
-            name="excerpt"
+            name="excerpt" 
+            maxlength="120"
             required
-            placeholder="A short line that appears in the entry list"
+            placeholder="A short text summarizing your post"
           />
         </div>
 
@@ -100,9 +101,9 @@
             id="body"
             name="body"
             required
-            placeholder="Write the entry. Leave a blank line between paragraphs."
+            placeholder="Write the detailed post here. Hit enter twice to leave a blank space between paragraphs"
           ></textarea>
-          <p class="field-hint">Separate paragraphs with a blank line.</p>
+          <p class="field-hint">Separate paragraphs for easy reading.</p>
         </div>
 
         <div class="field">
@@ -111,7 +112,7 @@
           <input type="hidden" id="image-data" />
           <img id="image-preview" alt="" style="display: none" />
           <p class="field-hint">
-            JPEG or PNG. It's resized automatically to keep things small.
+            JPEG or PNG only. Image is resized automatically.
             <button
               type="button"
               id="remove-image-btn"
