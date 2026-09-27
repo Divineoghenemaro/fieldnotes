@@ -171,6 +171,14 @@
     left: 0; 
   }
 
+
+/* ---------- About ---------- */
+
+   .about-header, .about-body {
+    width: 90%;
+  }
+
+
 /* ---------- Footer ---------- */
   
   .foot-cont {
