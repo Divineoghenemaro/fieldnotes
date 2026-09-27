@@ -145,9 +145,7 @@
     margin: 0 auto;
     min-width: 98%;
     max-width: 98%; 
-    padding: 5px 0; 
-		 height: auto; 
-    max-height: fit-content;
+    padding: 5px 0;
     display: block !important;
     float: none; 
     overflow: flex; 
@@ -158,7 +156,8 @@
     overflow: hidden; 
   }
   .sidebar, .post-body {
-    height: auto;
+    height: auto; 
+    max-height: fit-content;
   }
   
 /* ---------- Entry ---------- */
